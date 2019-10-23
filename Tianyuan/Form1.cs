@@ -23,14 +23,18 @@ namespace Tianyuan
         private void websocket_MessageReceived(object sender, MessageReceivedEventArgs e)
         {
             if (!e.Message.Equals(" "))
+            {
                 this.listBox1.Invoke(new EventHandler(ShowMessage), e.Message);
+               
+            }
 
         }
 
         private void ShowMessage(object sender, EventArgs e)
         {
             this.listBox1.Items.Add(DateTime.Now.ToLocalTime().ToString() +"      " + sender.ToString());
-            if (listBox1.Items.Count > 10)
+            listBox1.SetSelected(listBox1.Items.Count - 1, true);
+            if (listBox1.Items.Count > 100)
             {
                 listBox1.Items.RemoveAt(0);
             }
@@ -47,6 +51,7 @@ namespace Tianyuan
             if (flag == 0)
             {
                 this.listBox1.Invoke(new EventHandler(ShowMessage), "网络异常");
+                listBox1.SetSelected(listBox1.Items.Count - 1, true);
                 flag = 1;
             }
         }
@@ -59,6 +64,7 @@ namespace Tianyuan
             while(websocket.State== WebSocketState.None)
                  websocket.Open();
             this.listBox1.Invoke(new EventHandler(ShowMessage), "服务器连接中");
+            listBox1.SetSelected(listBox1.Items.Count - 1, true);
             while (websocket.State== WebSocketState.Open)
                 timer1.Enabled = true;
 
@@ -75,6 +81,21 @@ namespace Tianyuan
             }
             else
                 flag = 0;
+        }
+
+
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            const string sPath = "log.txt";
+
+            System.IO.StreamWriter SaveFile = new System.IO.StreamWriter(sPath);
+            foreach (var item in listBox1.Items)
+            {
+                SaveFile.WriteLine(item.ToString());
+            }
+            SaveFile.ToString();
+            SaveFile.Close();
         }
     }
 }

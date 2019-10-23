@@ -20,3 +20,13 @@ C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Debug\Tianyuan.csproj.Cor
 C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Debug\Tianyuan.csproj.CopyComplete
 C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Debug\Tianyuan.exe
 C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Debug\Tianyuan.pdb
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\bin\Debug\Tianyuan.exe.config
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\bin\Debug\Tianyuan.exe
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\bin\Debug\Tianyuan.pdb
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.Form1.resources
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.Properties.Resources.resources
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.csproj.GenerateResource.cache
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.csproj.CoreCompileInputs.cache
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.csproj.CopyComplete
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.exe
+C:\Users\Chadiy\Desktop\VoiceAnnouncements\Tianyuan\obj\Debug\Tianyuan.pdb
