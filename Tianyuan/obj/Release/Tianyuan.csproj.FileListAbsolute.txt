@@ -1,0 +1,11 @@
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\bin\Release\Tianyuan.exe.config
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\bin\Release\Tianyuan.exe
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\bin\Release\Tianyuan.pdb
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\bin\Release\WebSocket4Net.dll
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.Form1.resources
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.Properties.Resources.resources
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.csproj.GenerateResource.cache
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.csproj.CoreCompileInputs.cache
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.csproj.CopyComplete
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.exe
+C:\Users\Chadiy\Desktop\Tianyuan\Tianyuan\Tianyuan\obj\Release\Tianyuan.pdb
