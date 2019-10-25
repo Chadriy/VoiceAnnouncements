@@ -32,17 +32,25 @@ namespace Tianyuan
 
         private void ShowMessage(object sender, EventArgs e)
         {
-            this.listBox1.Items.Add(DateTime.Now.ToLocalTime().ToString() +"      " + sender.ToString());
-            listBox1.SetSelected(listBox1.Items.Count - 1, true);
-            if (listBox1.Items.Count > 100)
+                string content = DateTime.Now.ToLocalTime().ToString() + "      " + sender.ToString();
+                this.listBox1.Items.Add(content);
+                listBox1.SetSelected(listBox1.Items.Count - 1, true);
+                if (listBox1.Items.Count > 100)
+                {
+                    listBox1.Items.RemoveAt(0);
+                }
+                SpeechSynthesizer speaker = new SpeechSynthesizer();
+                speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 2, System.Globalization.CultureInfo.CurrentCulture);
+                speaker.Rate = 1;
+                speaker.Volume = 100;
+            if (!sender.ToString().Equals("服务器连接中"))
             {
-                listBox1.Items.RemoveAt(0);
+                speaker.Speak(sender.ToString());
             }
-            SpeechSynthesizer speaker = new SpeechSynthesizer();
-            speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 2, System.Globalization.CultureInfo.CurrentCulture);
-            speaker.Rate = 1;
-            speaker.Volume = 100;
-            speaker.SpeakAsync(sender.ToString());
+            else
+            {
+                speaker.SpeakAsync(sender.ToString());
+            }
         }
 
 
