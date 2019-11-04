@@ -1,7 +1,6 @@
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Release\Tianyuan.exe.config
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Release\Tianyuan.exe
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Release\Tianyuan.pdb
-C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Release\WebSocket4Net.dll
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.Form1.resources
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.Properties.Resources.resources
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.csproj.GenerateResource.cache
@@ -9,3 +8,4 @@ C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tiany
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.csproj.CopyComplete
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.exe
 C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.pdb
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Release\Tianyuan.csprojAssemblyReference.cache

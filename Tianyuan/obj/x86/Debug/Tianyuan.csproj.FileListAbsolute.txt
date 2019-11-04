@@ -1,0 +1,11 @@
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Debug\Tianyuan.exe.config
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Debug\Tianyuan.exe
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\bin\x86\Debug\Tianyuan.pdb
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.csprojAssemblyReference.cache
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.Form1.resources
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.Properties.Resources.resources
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.csproj.GenerateResource.cache
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.csproj.CoreCompileInputs.cache
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.csproj.CopyComplete
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.exe
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x86\Debug\Tianyuan.pdb

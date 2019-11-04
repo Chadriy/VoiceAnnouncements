@@ -1,0 +1,4 @@
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x64\Debug\Tianyuan.Form1.resources
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x64\Debug\Tianyuan.Properties.Resources.resources
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x64\Debug\Tianyuan.csproj.GenerateResource.cache
+C:\Users\Chadiy\Desktop\天原\VoiceAnnouncements\Tianyuan\obj\x64\Debug\Tianyuan.csproj.CoreCompileInputs.cache

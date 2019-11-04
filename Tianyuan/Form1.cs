@@ -9,6 +9,7 @@ using WebSocket4Net;
 using System.Threading;
 using System.Speech.Synthesis;
 using SuperSocket.ClientEngine;
+using System.Net.NetworkInformation;
 
 namespace Tianyuan
 {
@@ -56,41 +57,50 @@ namespace Tianyuan
 
         void websocket_Error(object sender, ErrorEventArgs e)
         {
-            if (flag == 0)
-            {
-                this.listBox1.Invoke(new EventHandler(ShowMessage), "网络异常");
-                listBox1.SetSelected(listBox1.Items.Count - 1, true);
-                flag = 1;
-            }
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-            websocket = new WebSocket("wss://whpgl.ybty.com/websocket");
-            websocket.MessageReceived += websocket_MessageReceived;
-            websocket.Error += websocket_Error;
-            while(websocket.State== WebSocketState.None)
-                 websocket.Open();
-            this.listBox1.Invoke(new EventHandler(ShowMessage), "服务器连接中");
-            listBox1.SetSelected(listBox1.Items.Count - 1, true);
-            while (websocket.State== WebSocketState.Open)
-                timer1.Enabled = true;
-
+            this.listBox1.Invoke(new EventHandler(ShowMessage), "网络异常，请检查网络连接并重新启动");
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            if (websocket.State != WebSocketState.Open&& websocket.State != WebSocketState.Connecting)
+            websocket.Send(" ");
+            if (websocket.State==WebSocketState.Closed)
             {
+                this.listBox1.Invoke(new EventHandler(ShowMessage), "网络异常，重新连接中");
                 websocket = new WebSocket("wss://whpgl.ybty.com/websocket");
                 websocket.MessageReceived += websocket_MessageReceived;
-                websocket.Error += websocket_Error;
-                websocket.Open();
+              //  websocket.Error += websocket_Error;
+                while (websocket.State == WebSocketState.None)
+                    websocket.Open();
             }
             else
                 flag = 0;
         }
-
+        public static bool PingIpOrDomainName(string strIpOrDName)
+        {
+            try
+            {
+                Ping objPingSender = new Ping();
+                PingOptions objPinOptions = new PingOptions();
+                objPinOptions.DontFragment = true;
+                string data = "";
+                byte[] buffer = Encoding.UTF8.GetBytes(data);
+                int intTimeout = 500;
+                PingReply objPinReply = objPingSender.Send(strIpOrDName, intTimeout, buffer, objPinOptions);
+                string strInfo = objPinReply.Status.ToString();
+                if (strInfo == "Success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -104,6 +114,19 @@ namespace Tianyuan
             }
             SaveFile.ToString();
             SaveFile.Close();
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            websocket = new WebSocket("wss://whpgl.ybty.com/websocket");
+            websocket.MessageReceived += websocket_MessageReceived;
+           // websocket.Error += websocket_Error;
+            while (websocket.State == WebSocketState.None)
+                websocket.Open();
+            this.listBox1.Invoke(new EventHandler(ShowMessage), "服务器连接中");
+            listBox1.SetSelected(listBox1.Items.Count - 1, true);
+            timer1.Enabled = true;
         }
     }
 }
